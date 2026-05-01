@@ -11,7 +11,7 @@ interface WellRowProps {
   onSelect: () => void;
   selected: boolean;
 }
-const fmt = n => n?.toLocaleString() ?? "—";
+const fmt =(n: number | null | undefined)=> n?.toLocaleString() ?? "—";
 
 const WellRow = ({ well: well, onSelect: onSelect, selected: selected }: WellRowProps) => {
 
