@@ -1,6 +1,6 @@
 // ─── CUSTOM TOOLTIP ───────────────────────────────────────────────────────────
 
-const fmt = n => n?.toLocaleString() ?? "—";
+const fmt = (n: number | null | undefined) => n?.toLocaleString() ?? "—";
 const ChartTooltip = ({ active, payload, label }) => {
   if (!active || !payload?.length) return null;
   return (
