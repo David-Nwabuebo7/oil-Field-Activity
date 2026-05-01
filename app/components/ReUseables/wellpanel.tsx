@@ -41,8 +41,8 @@ const statusConfig:configProps = {
   "shut-in":{ color: "#ef4444", bg: "rgba(239,68,68,0.12)", label: "Shut-in", dot: "bg-red-400" },
 };
 
-const [pressureSeries, setPressureSeries] = useState([]);
-const [flowSeries, setFlowSeries] = useState([]);
+const [pressureSeries, setPressureSeries] = useState<{ time: string; value: number }[]>([])
+const [flowSeries, setFlowSeries] = useState<{ time: string; value: number }[]>([])
 const [flowVal, setFlowVal] = useState(well?.flowRate);
 
 useEffect(() => {
