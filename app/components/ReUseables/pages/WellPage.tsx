@@ -52,7 +52,7 @@ const WellPage = ({ Search }: WellPageprop) => {
                         </tr></thead>
                         <tbody>
                             {filteredWells.map(w => (
-                                <WellRow key={w.id} well={w} onSelect={setSelectedWell} selected={selectedWell?.id === w.id} />
+                               <WellRow key={w.id} well={w} onSelect={() => setSelectedWell(w)} selected={selectedWell?.id === w.id} />
                             ))}
                         </tbody>
                     </table>
