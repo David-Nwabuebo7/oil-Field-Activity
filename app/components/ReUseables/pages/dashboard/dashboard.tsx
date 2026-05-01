@@ -82,10 +82,10 @@ const dashboard = ({ loading: loading, liveStats: liveStats, Search: Search, Upd
       </div>
       {/* Stat cards */}
       <div style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: 16, marginBottom: 24 }}>
-        <StatCard loading={loading} title="Total Production" value={liveStats?.production} unit="bbl/day" trend="up" trendVal="+5.2%" icon={Zap} color="#3b82f6" sparkData={sparkProduction} selectedWell={selectedWell ? true : false} />
-        <StatCard loading={loading} title="Active Wells" value={liveStats?.activeWells} unit="wells" trend="up" trendVal="+1" icon={Droplets} color="#22c55e" sparkData={sparkWells} selectedWell={selectedWell ? true : false} />
-        <StatCard loading={loading} title="Avg Pressure" value={liveStats?.avgPressure} unit="psi" trend="down" trendVal="-1.8%" icon={Gauge} color="#f59e0b" sparkData={sparkPressure} selectedWell={selectedWell ? true : false} />
-        <StatCard loading={loading} title="Avg Flow Rate" value={liveStats?.avgFlow} unit="bpd" trend="up" trendVal="+3.1%" icon={Activity} color="#a855f7" sparkData={sparkFlow} selectedWell={selectedWell ? true : false} />
+        <StatCard loading={loading} title="Total Production" value={liveStats?.production} unit="bbl/day" trend="up" trendVal="+5.2%" icon={Zap} color="#3b82f6" sparkData={sparkProduction} />
+<StatCard loading={loading} title="Active Wells" value={liveStats?.activeWells} unit="wells" trend="up" trendVal="+1" icon={Droplets} color="#22c55e" sparkData={sparkWells} />
+<StatCard loading={loading} title="Avg Pressure" value={liveStats?.avgPressure} unit="psi" trend="down" trendVal="-1.8%" icon={Gauge} color="#f59e0b" sparkData={sparkPressure} />
+<StatCard loading={loading} title="Avg Flow Rate" value={liveStats?.avgFlow} unit="bpd" trend="up" trendVal="+3.1%" icon={Activity} color="#a855f7" sparkData={sparkFlow} />
       </div>
       <ChartsRow pressureDepthData={pressureDepthData} loading={loading} />
 
