@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { Download, FileText, Clock } from 'lucide-react'
 const reports = () => {
-  const [reportRange, setReportRange] = useState({ from: "2026-01-01", to: "2026-04-17" });
+ const [reportRange, setReportRange] = useState<{ from: string; to: string; [key: string]: string }>({ from: "", to: "" })
   return (
     <div>
       <div style={{ marginBottom: 24 }}>
