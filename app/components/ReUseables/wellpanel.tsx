@@ -25,7 +25,7 @@ const fmt = (n: number | null | undefined)=> n?.toLocaleString() ?? "—";
 const WellPanel = ({ well, onClosed }:Panelprops) => {
 
 
-    const generateWellTimeSeries = (base:number, variance:number, points = 48) => {
+const generateWellTimeSeries = (base: number, variance: number, points = 48) => {
   const data = []; let v = base;
   for (let i = points; i >= 0; i--) {
     const d = new Date(); d.setHours(d.getHours() - i);
