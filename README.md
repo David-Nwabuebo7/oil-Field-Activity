@@ -263,5 +263,5 @@ Built by **David Nwabuebo** · Petroleum Engineering + React
 ---
 
 ## 📄 License
-NEXT_PUBLIC_WEATHER_KEY = 4d2f63c69d5a1b17a46f14c361211092
+
 This project is licensed under the **MIT License** — see the [LICENSE](LICENSE) file for details.
