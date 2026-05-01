@@ -35,7 +35,8 @@ const generateWellTimeSeries = (base: number, variance: number, points = 48) => 
   }
   return data;
 };
-const statusConfig:configProps = {
+
+const statusConfig: Record<string, configProps> = {
   active:  { color: "#22c55e", bg: "rgba(34,197,94,0.12)",  label: "Active",  dot: "bg-green-400" },
   warning: { color: "#f59e0b", bg: "rgba(245,158,11,0.12)", label: "Warning", dot: "bg-yellow-400" },
   "shut-in":{ color: "#ef4444", bg: "rgba(239,68,68,0.12)", label: "Shut-in", dot: "bg-red-400" },
