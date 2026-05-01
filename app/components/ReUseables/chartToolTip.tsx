@@ -1,7 +1,7 @@
 // ─── CUSTOM TOOLTIP ───────────────────────────────────────────────────────────
 
 const fmt = (n: number | null | undefined) => n?.toLocaleString() ?? "—";
-const ChartTooltip = ({ active, payload, label }) => {
+const ChartTooltip = ({ active, payload, label }: { active?: boolean; payload?: { name: string; value: number }[]; label?: string }) => { => {
   if (!active || !payload?.length) return null;
   return (
     <div style={{ background: "#0f172a", border: "1px solid #334155", borderRadius: 10, padding: "10px 14px" }}>
