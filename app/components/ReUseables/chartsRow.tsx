@@ -7,7 +7,7 @@ import {
 
 import ChartTooltip from './chartToolTip'
 
-const fmt = n => n?.toLocaleString() ?? "—";
+const fmt = (n: number | null | undefined)=> n?.toLocaleString() ?? "—";
 
  interface ChartRowProps {
     loading: boolean;
