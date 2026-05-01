@@ -17,7 +17,7 @@ const ReUseable = ({icon:icon , tittle: tittle , show:show  , active:active ,sid
       ${active ? "bg-blue-500/15 border border-blue-500/25 " : ""}`}
   >
     <div className="shrink-0 hover: focus:text-blue-200">
-      {icon && React.cloneElement(icon, {
+      {icon && React.cloneElement(icon as React.ReactElement, {
         size: 16,
         color: active ? "#93c5fd" : "#64748b",
       })}
