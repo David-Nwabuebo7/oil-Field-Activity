@@ -17,7 +17,11 @@ const WellPage = ({ Search }: WellPageprop) => {
         { id: "W-07", name: "Well-07", location: "Block A-11", depth: 8900, type: "Gas", status: "warning", pressure: 2100, flowRate: 155, lastUpdated: "18 mins ago", lat: 29.7, lng: -94.9 },
         { id: "W-08", name: "Well-08", location: "Block C-6", depth: 15600, type: "Oil", status: "active", pressure: 4400, flowRate: 710, lastUpdated: "1 min ago", lat: 30.1, lng: -95.3 },
     ];
-    const [selectedWell, setSelectedWell] = useState(null);
+   const [selectedWell, setSelectedWell] = useState<{
+  id: string; name: string; location: string; depth: number;
+  type: string; status: string; pressure: number; flowRate: number;
+  lastUpdated: string; lat: number; lng: number;
+} | null>(null)
 
     const filteredWells = wellsData.filter(w =>
         w.name.toLowerCase().includes(Search.toLowerCase()) ||
