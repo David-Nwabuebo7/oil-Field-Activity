@@ -29,7 +29,7 @@ const Analytics = ({ wellsData, pressureDepthData }: AnalyticsProps) => {
                   label={false}
                   isAnimationActive={true}>
                   {wellsData?.map((w, i) => (
-                    <rect key={i} fill={w?.status === "active" ? "#3b82f6" : w?.status === "warning" ? "#f59e0b" : "#ef4444"} />
+                  <rect key={i} fill={(w as { status: string })?.status === "active" ? "#3b82f6" : (w as { status: string })?.status === "warning" ? "#f59e0b" : "#ef4444"} />
                   ))}
                 </Bar>
               </BarChart>
