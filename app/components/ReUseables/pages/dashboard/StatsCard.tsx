@@ -15,7 +15,7 @@ interface StatsCardProps {
 
 }
 
-const fmt = n => n?.toLocaleString() ?? "—";
+const fmt = (n: number | null | undefined) => n?.toLocaleString() ?? "—";
 const StatCard = ({ title: title, value: value, unit: unit, trend: trend, trendVal: trendVal, icon: Icon, color: color, sparkData: sparkData, loading: loading }: StatsCardProps) => {
   const positive = trend === "up";
   return (
