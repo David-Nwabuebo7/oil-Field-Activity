@@ -18,7 +18,7 @@ interface Panelprops{
     
    
 }
-const fmt = n => n?.toLocaleString() ?? "—";
+const fmt = (n: number | null | undefined) => n?.toLocaleString() ?? "—";
 
 
 
