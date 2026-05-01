@@ -6,7 +6,7 @@ interface AnalyticsProps {
   pressureDepthData: object[];
 }
 const Analytics = ({ wellsData, pressureDepthData }: AnalyticsProps) => {
-  const fmt = n => n?.toLocaleString() ?? "—";
+  const fmt = (n: number | null | undefined) => n?.toLocaleString() ?? "—";
   return (
     <div>
       <div>
