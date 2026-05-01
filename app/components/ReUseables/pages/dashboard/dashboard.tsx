@@ -109,7 +109,7 @@ const dashboard = ({ loading: loading, liveStats: liveStats, Search: Search, Upd
               </tr></thead>
               <tbody>
                 {filteredWells?.slice(0, 6).map(w => (
-                  <WellRow key={w?.id} well={w} onSelect={setSelectedWell} selected={selectedWell?.id === w?.id} />
+                  <WellRow key={w?.id} well={w} onSelect={()=>setSelectedWell(w)} selected={selectedWell?.id === w?.id} />
                 ))}
               </tbody>
             </table>
