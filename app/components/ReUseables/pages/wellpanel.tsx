@@ -121,7 +121,7 @@ console.log(flowVal)
               <defs><linearGradient id="pd-flow" x1="0" y1="0" x2="0" y2="1"><stop offset="5%" stopColor="#22c55e" stopOpacity={.3}/><stop offset="95%" stopColor="#22c55e" stopOpacity={0}/></linearGradient></defs>
               <XAxis dataKey="time" tick={{ fill: "#475569", fontSize: 9 }} axisLine={false} tickLine={false} />
               <YAxis tick={{ fill: "#475569", fontSize: 9 }} axisLine={false} tickLine={false} width={40} />
-              <Tooltip content={<ChartTooltip />} />
+       <Tooltip content={<ChartTooltip />} />
               <Area type="monotone" dataKey="value" name="Flow Rate" stroke="#22c55e" strokeWidth={1.5} fill="url(#pd-flow)" dot={false} />
             </AreaChart>
           </ResponsiveContainer>
