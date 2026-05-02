@@ -6,6 +6,11 @@ type configProps = {
   label: string;
   dot: string;
 }
+type Well = {
+  id: string; name: string; location: string; depth: number;
+  type: string; status: string; pressure: number; flowRate: number;
+  lastUpdated: string; lat: number; lng: number;
+}
 
 interface WellRowProps {
   well: {
@@ -13,7 +18,7 @@ interface WellRowProps {
   type: string; status: string; pressure: number; flowRate: number;
   lastUpdated: string; lat: number; lng: number;
 };
-  onSelect: (well: well) => void
+  onSelect: (well: Well) => void
   selected: boolean;
 }
 const fmt =(n: number | null | undefined)=> n?.toLocaleString() ?? "—";
