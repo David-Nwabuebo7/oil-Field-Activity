@@ -6,12 +6,13 @@ import { AreaChart, Area, XAxis, YAxis,
 import { Activity , Gauge,Play, Square, SlidersHorizontal, MapPin, Ruler, Layers, X} from "lucide-react";
 import ChartTooltip from '../chartToolTip';
 
-interface configProps{
-    active :{color:string , bg: string , label:string , dot: string};
-    warning :{color:string , bg: string , label:string , dot: string};
-    "shut-in":{color:string , bg: string , label:string , dot: string};
-}
 
+type configProps = {
+  color: string;
+  bg: string;
+  label: string;
+  dot: string;
+}
 interface Panelprops{
     well:{ status:string , name:string , pressure:number , flowRate:number , lastUpdated:string , location:string , depth:number, type:string};
     onClosed: ()=> void;
