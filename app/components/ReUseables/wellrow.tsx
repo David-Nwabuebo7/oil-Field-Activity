@@ -15,11 +15,11 @@ const fmt =(n: number | null | undefined)=> n?.toLocaleString() ?? "—";
 
 const WellRow = ({ well: well, onSelect: onSelect, selected: selected }: WellRowProps) => {
 
-  const statusConfig: configProps = {
-    active: { color: "#22c55e", bg: "rgba(34,197,94,0.12)", label: "Active", dot: "bg-green-400" },
-    warning: { color: "#f59e0b", bg: "rgba(245,158,11,0.12)", label: "Warning", dot: "bg-yellow-400" },
-    "shut-in": { color: "#ef4444", bg: "rgba(239,68,68,0.12)", label: "Shut-in", dot: "bg-red-400" },
-  };
+ const statusConfig: Record<string, configProps> = {
+  active:   { color: "#22c55e", bg: "rgba(34,197,94,0.12)",  label: "Active",  dot: "bg-green-400" },
+  warning:  { color: "#f59e0b", bg: "rgba(245,158,11,0.12)", label: "Warning", dot: "bg-yellow-400" },
+  "shut-in":{ color: "#ef4444", bg: "rgba(239,68,68,0.12)",  label: "Shut-in", dot: "bg-red-400" },
+};
   const cfg = statusConfig[well?.status]; //use to return a particular property of an object using the name
 
   return (
