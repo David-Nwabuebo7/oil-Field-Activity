@@ -1,5 +1,5 @@
 'use client';
-import { useState, useEffect ,React } from "react";
+import React ,{ useState, useEffect  } from "react";
 import { LayoutDashboard, Droplets, BarChart3, FileText, Settings } from 'lucide-react'
 import Logo from './components/logo'
 import ReUseable from './components/ReUseables/ReUseable'
