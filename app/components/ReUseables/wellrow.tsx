@@ -1,9 +1,10 @@
 import { Droplets, ChevronRight } from "lucide-react";
 
-interface configProps {
-  active: { color: string, bg: string, label: string, dot: string };
-  warning: { color: string, bg: string, label: string, dot: string };
-  "shut-in": { color: string, bg: string, label: string, dot: string };
+type configProps = {
+  color: string;
+  bg: string;
+  label: string;
+  dot: string;
 }
 
 interface WellRowProps {
