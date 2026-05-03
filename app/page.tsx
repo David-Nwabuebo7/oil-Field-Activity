@@ -136,10 +136,10 @@ export default function Home() {
     { id: "W-08", name: "Well-08", location: "Block C-6", depth: 15600, type: "Oil", status: "active", pressure: 4400, flowRate: 710, lastUpdated: "1 min ago", lat: 30.1, lng: -95.3 },
   ];
 const pageMap: Record<string, React.ReactElement> = {
-  Dashboard: <Dashboard />,
-  Wells: <WellsPage/>,
-  Analytics: <Analytics/>,
-  Reports: <Reports/>,
+  Dashboard: <Dashboard loading={loading} liveStats={liveStats} Search={Search} UpdatePage={UpdatePage} />,
+  Wells: <WellsPage />,
+  Analytics: <Analytics />,
+  Reports: <Reports />,
   settings: <Settings />,
 };
 
