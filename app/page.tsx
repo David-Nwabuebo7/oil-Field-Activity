@@ -137,7 +137,7 @@ export default function Home() {
   ];
 const pageMap: Record<string, React.ReactElement> = {
   Dashboard: <Dashboard loading={loading} liveStats={liveStats} Search={Search} UpdatePage={UpdatePage} />,
-  Wells: <WellsPage />,
+  Wells: <WellsPage Search={search) />,
   Analytics: <Analytics />,
   Reports: <Reports />,
   settings: <Settings />,
