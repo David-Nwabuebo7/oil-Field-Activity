@@ -16,7 +16,7 @@ interface NavBarProps{
     notifOpen:boolean;
     unread:number;
     toggleNotifOpen: ()=> void;
-    InputVal : ()=> void;
+    InputVal: (e: React.ChangeEvent<HTMLInputElement>) => void
 }
 
 
